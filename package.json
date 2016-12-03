@@ -1,0 +1,64 @@
+{
+  "name": "prevent-forbidden-code",
+  "description": "A ghook plugin that prevents a user from unintentionally commiting undesirable code to a project. ",
+  "version": "1.0.1",
+  "author": "Keith M. Pepin <keith.pepin@gmail.com>",
+  "bin": {
+    "prevent-forbidden-code": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pre-commit-prevent-forbidden-code/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "./index.js",
+      "commit-msg": "validate-commit-msg"
+    },
+    "prevent-forbidden-code": {
+      "exclude": ["*.md"]
+    }
+  },
+  "contributors": [
+    {
+      "name": "Haodin Li",
+      "email": "haodan.li.nharng@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "colors": "1.1.2",
+    "find-package-json": "1.0.0",
+    "minimatch": "3.0.3",
+    "simple-git": "1.63.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
+    "fixpack": "2.3.1",
+    "ghooks": "1.3.2",
+    "istanbul": "0.4.5",
+    "jasmine": "2.5.2",
+    "jasmine-reporters": "2.2.0",
+    "semantic-release": "6.3.2",
+    "validate-commit-msg": "2.8.2"
+  },
+  "homepage": "https://github.com/prevent-forbidden-code#readme",
+  "keywords": [
+    "code",
+    "forbidden",
+    "ghooks",
+    "stink"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeithPepin/prevent-forbidden-code"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  }
+}
