@@ -5,7 +5,7 @@ This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent
 [![NPM](https://nodei.co/npm/prevent-forbidden-code.png)](https://npmjs.org/package/prevent-forbidden-code)
 
 [![NPM Version](https://img.shields.io/npm/v/prevent-forbidden-code.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
-[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/prevent-forbidden-code)
+[![npm](https://img.shields.io/npm/dm/localeval.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
 [![Build Status](https://travis-ci.org/KeithPepin/prevent-forbidden-code.svg?branch=master)](https://travis-ci.org/KeithPepin/prevent-forbidden-code)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Dependencies status](https://david-dm.org/KeithPepin/prevent-forbidden-code.svg?theme=shields.io)](https://david-dm.org/KeithPepin/prevent-forbidden-code.svg)
