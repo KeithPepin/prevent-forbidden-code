@@ -1,7 +1,7 @@
 {
   "name": "prevent-forbidden-code",
   "description": "A ghook plugin that prevents a user from unintentionally commiting undesirable code to a project. ",
-  "version": "1.0.0-semantically-released",
+  "version": "0.0.0-development",
   "author": "Keith M. Pepin <keith.pepin@gmail.com>",
   "bin": {
     "prevent-forbidden-code": "index.js"
@@ -61,6 +61,7 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
