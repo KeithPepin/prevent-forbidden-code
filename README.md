@@ -72,7 +72,7 @@ If you absolutely need to commit this use git commit --no-verify (-n)
 ## Configuration Options
 
 ### Exclusions
-Adding exclusions to your configuration allows `prevent-forbidden-code` to skip one or more matching files from the scan.  Under the hood, `prevent-forbidden-code` uses the excellent [minimatch](https://www.google.com "minimatch's npm page") module to convert glob expressions in the array into regular expressions for file name matching.  In the following configuration sample, all usages of the normally prevented commands in any markdown file would would be allowed.
+Adding exclusions to your configuration allows `prevent-forbidden-code` to skip one or more matching files from the scan.  Under the hood, `prevent-forbidden-code` uses the excellent [minimatch](https://www.npmjs.com/package/minimatch "minimatch's npm page") module to convert glob expressions in the array into regular expressions for file name matching.  In the following configuration sample, all usages of the normally prevented commands in any markdown file would would be allowed.
 
 ```
 // inside package.json

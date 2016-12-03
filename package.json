@@ -1,7 +1,7 @@
 {
   "name": "prevent-forbidden-code",
   "description": "A ghook plugin that prevents a user from unintentionally commiting undesirable code to a project. ",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "author": "Keith M. Pepin <keith.pepin@gmail.com>",
   "bin": {
     "prevent-forbidden-code": "index.js"
