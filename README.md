@@ -3,10 +3,9 @@
 This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent Dodds' simple git hooks module") compatible plugin that prevents unwanted code from being committed into your repository.
 
 [![NPM](https://nodei.co/npm/prevent-forbidden-code.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/prevent-forbidden-code/)
-
 [![NPM Version](https://img.shields.io/npm/v/prevent-forbidden-code.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
-[![npm](https://img.shields.io/npm/dt/prevent-forbidden-code.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
 [![Build Status](https://travis-ci.org/KeithPepin/prevent-forbidden-code.svg?branch=master)](https://travis-ci.org/KeithPepin/prevent-forbidden-code)
+[![npm](https://img.shields.io/npm/dt/prevent-forbidden-code.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![David](https://david-dm.org/KeithPepin/prevent-forbidden-code/status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code)
 [![David](https://david-dm.org/KeithPepin/prevent-forbidden-code/dev-status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code?type=dev)
