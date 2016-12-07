@@ -8,8 +8,8 @@ This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent
 [![npm](https://img.shields.io/npm/dt/prevent-forbidden-code.svg?style=flat-square)](https://www.npmjs.com/package/prevent-forbidden-code)
 [![Build Status](https://travis-ci.org/KeithPepin/prevent-forbidden-code.svg?branch=master)](https://travis-ci.org/KeithPepin/prevent-forbidden-code)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
-[![dependencies Status](https://david-dm.org/KeithPepin/prevent-forbidden-code/status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code)
-[![devDependencies Status](https://david-dm.org/KeithPepin/prevent-forbidden-code/dev-status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code?type=dev)
+[![David](https://david-dm.org/KeithPepin/prevent-forbidden-code/status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code)
+[![David](https://david-dm.org/KeithPepin/prevent-forbidden-code/dev-status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code?type=dev)
 
 ## Prerequisites
 
