@@ -11,7 +11,6 @@ This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent
 [![dependencies Status](https://david-dm.org/KeithPepin/prevent-forbidden-code/status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code)
 [![devDependencies Status](https://david-dm.org/KeithPepin/prevent-forbidden-code/dev-status.svg?style=flat-square)](https://david-dm.org/KeithPepin/prevent-forbidden-code?type=dev)
 
-
 ## Prerequisites
 
 - git
