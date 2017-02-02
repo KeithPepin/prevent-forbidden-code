@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "node": true,
+    "protractor": true
+  },
+  "globals": {
+    "angular": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+        "modules": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "indent": [2, 4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [2, 240],
+    "no-invalid-this": 1,
+    "no-unused-vars": 1,
+    "no-var": 1,
+    "one-var": 1,
+    "require-jsdoc": 1,
+    "valid-jsdoc": 2
+  }
+}
