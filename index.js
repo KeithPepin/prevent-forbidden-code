@@ -44,6 +44,24 @@ function checkExcluded(fileName) {
     });
 }
 
+function fileExists(file) {
+    var fileExists = true;
+
+    try {
+        fs.statSync(file, function(err, stat) {
+            if (err == null) {
+                fileExists = true;
+            } else {
+                fileExists = false;
+            }
+        });
+    } catch (e) {
+        fileExists = false;
+    }
+
+    return fileExists;
+}
+
 git.diff(['--cached', '--name-only'], function(error, diff) {
     var initialFiles = diff.trim().split('\n'),
         files = [];
@@ -51,7 +69,7 @@ git.diff(['--cached', '--name-only'], function(error, diff) {
     console.log('[ >>> BEGIN PRE-COMMIT FORBIDDEN CODE CHECK ]'.green);
 
     initialFiles.reduce(function(previous, current) {
-        if (!checkExcluded(current)) {
+        if (!checkExcluded(current) && fileExists(current)) {
             previous.push(current);
         }
 
@@ -66,7 +84,7 @@ git.diff(['--cached', '--name-only'], function(error, diff) {
 
     if (errorFound) {
         console.log('[ >>> COMMIT REJECTED ]'.red);
-	    console.log('If you absolutely need to commit this use git commit --no-verify (-n)'.red);
+        console.log('If you absolutely need to commit this use git commit --no-verify (-n)'.red);
         process.exit(1);
     } else {
         console.log('[ >>> PRE-COMMIT FORBIDDEN CODE CHECK COMPLETE ]'.green);
