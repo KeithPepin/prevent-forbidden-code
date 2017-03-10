@@ -2,14 +2,14 @@
 
 'use strict';
 
-let git = require('simple-git')(process.cwd());
-let colors = require('colors'); // eslint-disable-line no-unused-vars
-let fs = require('fs');
-let minimatch = require('minimatch');
-let finder = require('find-package-json')();
-let packageJson = finder.next().value;
-let projectName = 'prevent-forbidden-code';
-let defaultForbid = [
+var git = require('simple-git')(process.cwd());
+var colors = require('colors'); // eslint-disable-line no-unused-vars
+var fs = require('fs');
+var minimatch = require('minimatch');
+var finder = require('find-package-json')();
+var packageJson = finder.next().value;
+var projectName = 'prevent-forbidden-code';
+var defaultForbid = [
     'console.log(',
     'console.info(',
     'console.error(',
@@ -22,12 +22,12 @@ let defaultForbid = [
     'ddescribe(',
     'iit('
 ];
-let configExists = (packageJson && packageJson.config && packageJson.config[projectName]);
-let forbidIsValid = configExists && packageJson.config[projectName].forbid && Array.isArray(packageJson.config[projectName].forbid);
-let exclusionIsValid = configExists && Array.isArray(packageJson.config[projectName].exclude);
-let forbiddenCode = forbidIsValid ? packageJson.config[projectName].forbid : defaultForbid;
-let exclusions = exclusionIsValid ? packageJson.config[projectName].exclude : [];
-let errorFound = false;
+var configExists = (packageJson && packageJson.config && packageJson.config[projectName]);
+var forbidIsValid = configExists && packageJson.config[projectName].forbid && Array.isArray(packageJson.config[projectName].forbid);
+var exclusionIsValid = configExists && Array.isArray(packageJson.config[projectName].exclude);
+var forbiddenCode = forbidIsValid ? packageJson.config[projectName].forbid : defaultForbid;
+var exclusions = exclusionIsValid ? packageJson.config[projectName].exclude : [];
+var errorFound = false;
 
 /**
  * Analyzes a given file for forbidden code
@@ -62,7 +62,7 @@ function checkExcluded(fileName) {
  * @return {boolean}
  */
 function fileExists(file) {
-    let fileExists = true;
+    var fileExists = true;
 
     try {
         fs.statSync(file, function(err, stat) {
@@ -80,8 +80,8 @@ function fileExists(file) {
 }
 
 git.diff(['--cached', '--name-only'], function(error, diff) {
-    let initialFiles = diff.trim().split('\n');
-    let files = [];
+    var initialFiles = diff.trim().split('\n');
+    var files = [];
 
     /* eslint-disable */
     console.log('[ >>> BEGIN PRE-COMMIT FORBIDDEN CODE CHECK ]'.green);
@@ -96,7 +96,7 @@ git.diff(['--cached', '--name-only'], function(error, diff) {
     }, files);
 
     files.forEach(function(file) {
-        let fileContents = fs.readFileSync(file, 'utf-8');
+        var fileContents = fs.readFileSync(file, 'utf-8');
 
         checkFile(file, fileContents);
     });
