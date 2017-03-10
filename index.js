@@ -109,7 +109,7 @@ git.diff(['--cached', '--name-only'], function(error, diff) {
         process.exit(1);
     } else {
         /* eslint-disable */
-        console.log('[ >>> PRE-COMMIT FORBIDDEN CODE CHECK COMPvarE ]'.green);
+        console.log('[ >>> PRE-COMMIT FORBIDDEN CODE CHECK COMPLETE ]'.green);
         /* eslint-enable */
         process.exit(0);
     }
