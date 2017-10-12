@@ -1,6 +1,6 @@
 # prevent-forbidden-code
 
-This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent Dodds' simple git hooks module") compatible plugin that prevents unwanted code from being committed into your repository.
+This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent Dodds' simple git hooks module") or [husky](https://www.npmjs.com/package/husky) compatible plugin that prevents unwanted code from being committed into your repository.
 
 [![NPM](https://nodei.co/npm/prevent-forbidden-code.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/prevent-forbidden-code/)
 
@@ -15,7 +15,7 @@ This module is intended as a [ghooks](https://www.npmjs.com/package/ghooks "Kent
 
 - git
 - Node >= 4.4.x
-- ghooks
+- ghooks or husky
 
 Make sure you have a git repository (`git init`) BEFORE installing ghooks, otherwise you have to take extra steps if you install ghooks before running `git init`.
 
